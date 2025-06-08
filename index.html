@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo de Bill Gates</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <img src="imagens/fotobillgates.jpg" alt="Bill Gates" id="foto-perfil">
+        <h1>Bill Gates</h1>
+        <hr>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Perfil</h2>
+            <ul>
+                <p>William Henry Gates III, mais conhecido como Bill Gates, é um magnata, filantropo e autor norte-americano, que ficou conhecido por fundar a Microsoft, a maior e mais conhecida empresa de software do mundo.</p>
+                <p>Bill Gates nasceu em Seattle, Washington, em 28 de outubro de 1955. Ele é filho de William H. Gates Sr. e Mary Maxwell Gates. Bill Gates estudou na Lakeside School, onde conheceu Paul Allen, com quem fundou a Microsoft em 1975.</p>
+                <p>Bill Gates é casado com Melinda French Gates, com quem tem três filhos. Em 2000, fundaram a Fundação Bill e Melinda Gates, focada em saúde e educação no mundo todo.</p>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Principais Competências</h2>
+            <ul>
+                <li>Liderança</li>
+                <li>Inovação</li>
+                <li>Visão estratégica</li>
+                <li>Capacidade de resolver problemas complexos</li>
+                <li>Trabalho em equipe</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Formação Acadêmica</h2>
+            <ul>
+                <li>Harvard College - 1973 a 1975</li>
+                <li>Lakeside School - 1967 a 1973</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Experiência Profissional</h2>
+            <ul>
+                <li>Microsoft - Fundador e CEO (1975–2000)</li>
+                <li>Microsoft - Presidente (2000–2014)</li>
+                <li>Microsoft - Conselheiro (2014–Presente)</li>
+            </ul>
+            <p><a href="experiencias.html">Ver mais</a></p>
+        </section>
+
+        <section>
+            <h2>Contato</h2>
+            <ul>
+                <p><img src="imagens/endereco.png" alt="Ícone endereço" class="icone"> <i>Endereço: One Microsoft Way, Redmond, WA 98052, EUA</i></p>
+                <p><img src="imagens/telefone.png" alt="Ícone telefone" class="icone"> <i>Telefone: +1 (425) 882-8080</i></p>
+                <p><img src="imagens/email.png" alt="Ícone e-mail" class="icone"> <i>Email: <a href="mailto:billgates@outlook.com">billgates@outlook.com</a></i></p>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+        // Trocar a imagem ao clicar
+        const foto = document.getElementById("foto-perfil");
+        const imagemOriginal = "imagens/fotobillgates.jpg";
+        const imagemAlternativa = "imagens/fotobillgates2.jpg"; // Coloque essa imagem na pasta correta
+
+        foto.addEventListener("click", () => {
+            foto.src = foto.src.includes("fotobillgates2.jpg") ? imagemOriginal : imagemAlternativa;
+        });
+
+        // Ocultar/mostrar conteúdo com clique e duplo clique
+        const subtitulos = document.querySelectorAll("main h2");
+
+        subtitulos.forEach(subtitulo => {
+            subtitulo.addEventListener("click", () => {
+                const proximo = subtitulo.nextElementSibling;
+                if (proximo) {
+                    proximo.style.display = "none";
+                }
+            });
+
+            subtitulo.addEventListener("dblclick", () => {
+                const proximo = subtitulo.nextElementSibling;
+                if (proximo) {
+                    proximo.style.display = "";
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

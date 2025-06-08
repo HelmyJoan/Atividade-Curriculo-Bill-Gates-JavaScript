@@ -1,0 +1,70 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+h1 {
+    color: #8B4513;
+    font-size: 28px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #8B4513;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.icone {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
